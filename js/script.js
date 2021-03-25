@@ -6,12 +6,36 @@ Gatsby vuole generare una falsa lista di 3 invitati*/
 var names = ["GIULIO", "ELENA", "ASIA", "ANTONELLO", "SILVIA"];
 var surnames = ["ROSSI", "BIANCHI", "VERDI", "BLU", "AZZURRI"];
 
+var fullNameList =[]; //empty for now, this array will be the container for my random data
 
-var randomNames = names[Math.floor (Math.random() * names.length)];
+
+/*var randomNames = names[Math.floor (Math.random() * names.length)];
 var randomSurnames = surnames[Math.floor (Math.random() * surnames.length)];
 
 console.log( "l'invitato è " + randomNames + " " + randomSurnames);
-//great for extrapolating 1 data, but I want 3!
+//great for extrapolating 1 data, but I want 3!*/
+
+//FOR Cycle
+for (var i = 0; i < 3; i++) {
+    //create a random index for var names
+    var randomNameIndex = Math.floor (Math.random() * names.length);//multiplication for the number that has to generated. From 0 to length (one number less)
+    
+    //create a random index for var surnames
+    var randomSurnameIndex = Math.floor (Math.random() * surnames.length);
+    
+    //access to lists with random indexes, we put the random index (number) for the name and then for the surname
+    var fullNames = names [randomNameIndex] + " " + surnames [randomSurnameIndex];
+    
+    //add the value to fullNameList
+    fullNameList.push(fullNames);
+}
+
+console.log(fullNameList);
+
+
+
+
+//WHILE Cycle
 
 
 
