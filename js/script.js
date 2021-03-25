@@ -1,7 +1,34 @@
+/*Snack 3
+Generatore di “nomi cognomi” casuali
+prendendo una lista di nomi e una lista di cognomi, 
+Gatsby vuole generare una falsa lista di 3 invitati*/
+
+var names = ["GIULIO", "ELENA", "ASIA", "ANTONELLO", "SILVIA"];
+var surnames = ["ROSSI", "BIANCHI", "VERDI", "BLU", "AZZURRI"];
+
+
+var randomNames = names[Math.floor (Math.random() * names.length)];
+var randomSurnames = surnames[Math.floor (Math.random() * surnames.length)];
+
+console.log( "l'invitato è " + randomNames + " " + randomSurnames);
+//great for extrapolating 1 data, but I want 3!
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Snack 2
 Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo*/
 
-var number = parseInt(prompt ("Inserisci un numero "));
+/*var number = parseInt(prompt ("Inserisci un numero "));
 console.log(number);
 
 if (number % 2 == 0 ) {
@@ -9,7 +36,8 @@ if (number % 2 == 0 ) {
     
 } else {
     console.log(number +1 + " Il numero che hai inserito è dispari");
-}
+}*/
+
 
 
 
