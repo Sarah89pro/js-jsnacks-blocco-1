@@ -15,8 +15,29 @@ var randomSurnames = surnames[Math.floor (Math.random() * surnames.length)];
 console.log( "l'invitato è " + randomNames + " " + randomSurnames);
 //great for extrapolating 1 data, but I want 3!*/
 
+
 //FOR Cycle
-for (var i = 0; i < 3; i++) {
+/*for (var i = 0; i < 3; i++) {
+    //create a random index for var names
+    var randomNameIndex = Math.floor (Math.random() * names.length);//multiplication for the number that has to generated. From 0 to length (one number less)
+    
+    //create a random index for var surnames
+    var randomSurnameIndex = Math.floor (Math.random() * surnames.length);
+    
+    //access to lists with random indexes, we put the random index (number) for the name and then for the surname
+    var fullNames = names [randomNameIndex] + " " + surnames [randomSurnameIndex];
+    
+    //add the value to fullNameList
+    fullNameList.push(fullNames);
+}
+
+console.log(fullNameList);*/
+
+
+
+
+//WHILE Cycle
+while (fullNameList.length < 3) {
     //create a random index for var names
     var randomNameIndex = Math.floor (Math.random() * names.length);//multiplication for the number that has to generated. From 0 to length (one number less)
     
@@ -31,11 +52,6 @@ for (var i = 0; i < 3; i++) {
 }
 
 console.log(fullNameList);
-
-
-
-
-//WHILE Cycle
 
 
 
