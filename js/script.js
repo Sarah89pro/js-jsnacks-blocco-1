@@ -1,12 +1,41 @@
+/*Snack 4
+Crea un array di numeri interi
+fai la somma di tutti gli elementi che sono in posizione dispari*/
+
+var numbers = [10, 25, 64, 2, 7, 80, 45];
+var sum = 0;
+
+for (var i = 0; i < numbers.length; i++) {
+
+    console.log (numbers [i]); //i represents from 0 to 6 under .length. i also give us the position
+    console.log ("Posizione" , i);
+
+    if ( i % 2 !==0) {
+        sum += numbers [i];
+
+    }
+}
+
+console.log ("tot", sum);
+
+
+
+
+
+
+
+
+
+
 /*Snack 3
 Generatore di “nomi cognomi” casuali
 prendendo una lista di nomi e una lista di cognomi, 
 Gatsby vuole generare una falsa lista di 3 invitati*/
 
-var names = ["GIULIO", "ELENA", "ASIA", "ANTONELLO", "SILVIA"];
+/*var names = ["GIULIO", "ELENA", "ASIA", "ANTONELLO", "SILVIA"];
 var surnames = ["ROSSI", "BIANCHI", "VERDI", "BLU", "AZZURRI"];
 
-var fullNameList =[]; //empty for now, this array will be the container for my random data
+var fullNameList =[];*/ //empty for now, this array will be the container for my random data
 
 
 /*var randomNames = names[Math.floor (Math.random() * names.length)];
@@ -37,7 +66,7 @@ console.log(fullNameList);*/
 
 
 //WHILE Cycle
-while (fullNameList.length < 3) {
+/*while (fullNameList.length < 3) {
     //create a random index for var names
     var randomNameIndex = Math.floor (Math.random() * names.length);//multiplication for the number that has to generated. From 0 to length (one number less)
     
@@ -51,7 +80,7 @@ while (fullNameList.length < 3) {
     fullNameList.push(fullNames);
 }
 
-console.log(fullNameList);
+console.log(fullNameList);*/
 
 
 
