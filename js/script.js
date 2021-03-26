@@ -1,8 +1,38 @@
+/*Snack 5 - Bonus
+Crea due array di numeri che hanno un numero di elementi diversi.
+Aggiungi elementi all’array che ha meno elementi
+fino a quando ne avrà tanti quanti l’altro.*/
+
+var numbersOne = [1, 2, 3, 4, 5, 6, 7, 8];
+var numbersTwo = [9, 10, 11, 12];
+
+console.log(numbersOne.length); //this way we find out how many elements are inside the array
+console.log(numbersTwo.length);
+
+while (numbersOne.length < numbersTwo.length) { // until numbersOne.length < numbersTwo.length, add random numbers as the lenght of numbersOne
+    numbersOne.push(Math.floor(Math.random() * numbersOne.length));
+}
+
+console.log(numbersOne);
+console.log(numbersTwo);
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Snack 4
 Crea un array di numeri interi
 fai la somma di tutti gli elementi che sono in posizione dispari*/
 
-var numbers = [10, 25, 64, 2, 7, 80, 45];
+/*var numbers = [10, 25, 64, 2, 7, 80, 45];
 var sum = 0;
 
 for (var i = 0; i < numbers.length; i++) {
@@ -16,7 +46,9 @@ for (var i = 0; i < numbers.length; i++) {
     }
 }
 
-console.log ("tot", sum);
+console.log ("tot", sum);*/
+
+
 
 
 
